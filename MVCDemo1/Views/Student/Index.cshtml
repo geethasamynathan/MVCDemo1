@@ -1,0 +1,58 @@
+﻿@model MVCDemo1.Models.Student
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<h2>  Strongly typed view -Example</h2>
+<ul>
+    <li>@Model.Id</li>
+    <li>@Model.Name</li>
+    <li>@Model.Gender</li>
+    @*<li> @Model.Salary</li>*@
+</ul>
+
+
+<h2> Student Controller Index Action Method</h2>
+@{
+    var student = ViewData["stu1"] as MVCDemo1.Models.Student;
+    var stu = ViewBag.stu2;
+}
+@*   <h2> Student Details using ViewData</h2>
+    <table border="1">
+        <tr>
+            <td> Id </td>
+            <td>@student.Id </td>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td>@student.Name </td>
+        </tr>
+        <tr>
+            <td> Gender </td>
+            <td>@student.Gender </td>
+        </tr>
+    </table>
+*@
+
+<h2> Student Details using ViewBag</h2>
+<table border="1">
+    <tr>
+        <td> Id </td>
+        <td>@stu.Id </td>
+    </tr>
+    <tr>
+        <td> Name </td>
+        <td>@stu.Name </td>
+    </tr>
+    <tr>
+        <td> Gender </td>
+        <td>@stu.Gender </td>
+    </tr>
+    <tr>
+        <td> Grade </td>
+        <td>@stu.Grade </td>
+    </tr>
+</table>

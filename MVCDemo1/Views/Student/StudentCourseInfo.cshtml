@@ -1,0 +1,14 @@
+﻿@model MVCDemo1.ViewModels.StudentCourseModel
+@{
+    ViewBag.Title = "StudentCourseInfo";
+}
+
+<h2>StudentCourseInfo</h2>
+<h3> @Model.Title</h3>
+<ul>
+    <li>@Model.Student1.Id</li>
+    <li>@Model.Student1.Name</li>
+    <li>@Model.Student1.Gender</li>
+    <li>@Model.Course.CourseId</li>
+    <li>@Model.Course.Name</li>
+</ul>
